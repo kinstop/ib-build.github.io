@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<div  class="enret">
+		<ul>
+			<div class="my-logo"><strong>my logo</strong></div>
+			<div class="navig">
+				<li class="nsa" onclick="define()"> <a href="#" title="home">Home</a></li>
+				<li class="nsa" onclick="define()"><a href="#" title="about">about</a></li>
+				<li class="nsa" onclick="define()"><a href="#" title="products">products</a></li>
+				<li class="nsa" onclick="define()"><a href="#" title="contact">contact us</a></li>
+			</div>
+			<div>
+				<div onclick="define()" class="free">
+					<div class="hamb gre"></div>
+					<div class="hamb"></div>
+					<div class="hamb"></div>
+				</div>
+			</div>
+		</ul>
+	</div>
+	<div class="contain">
+		<div class="header">
+			<h1>hi, <div id="name">Ajiboye Ibrahim</div></h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<div class="butcon">
+				<button animate class="button animate__animated animate__fadeInDown" onclick="road()" title="sign up now">sign up</button>
+				</div>
+			</p>
+		</div>
+	</div>
+	<p id="name"></p>
+	<div class="content">
+			<div id="ken" class="container">
+				<h1>welcome to kinstorm</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="container">
+				<h2>products</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+	</div>
+	<footer>
+		<div class="foot">
+			<div>
+				kinstorm arcad
+			</div>
+			<div>
+				contact details
+				<a href="#">facbook</a>
+				<a href="#">linkedin</a>
+				<a href="#">instagram</a>
+			</div>
+			<div class="copyright">&copy Ajiboye Ibrahim 2022 all rights reserved</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		var fruit = ["Banana", "Apple", "Pear"];
+		var vehicle = ["acura", "Honda", "benz"];
+		console.log(fruit.concat(acura))
+		function define() {
+			alert("Ibrahim is currently working on this page")
+		}
+		function road() {
+			var rest = prompt("what is your name?")
+			if (rest.length>=3) {
+				var damn = alert("hi, "+rest)
+				document.getElementById("name").innerHTML = rest;
+			}else{
+				var uey = confirm("your name is too short!")
+			}
+		}
+	</script>
+</body>
+</html>
